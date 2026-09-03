@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-09-03 (Thu) ~09:30 BST · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-09-03 (Thu) ~08:56 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,15 +317,10 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-08-28:** Pulse rebranded local (QUEDERA cyan, palette-only). Rebrand accepted by Neil 10:54 BST. `toggleDiscipline` multi-branch bug fixed. ITIL→ITSM display scrub done (UI only, data untouched).
-- **2026-08-29:** Branding sweep paused per James 22:26 BST — QUEDERA scaffold freeze 22:26 BST → Mon 31 Aug 07:00 BST. Unfrozen Mon 31 Aug.
-- **2026-08-31:** OpenClaw upgrade plan created (Phase 0 pre-flight). Alert cron `openclaw-2026.8.1-stable-watch` removed (was erroring).
-- **2026-09-01:** DUET 4 decisions locked in #general at 22:03 BST. Music journal feature PAUSED at 09:04 BST per Craig's voice note (cron removed, channel kept as visual reminder, scripts/creds untouched). A2L monthly digest ran (AMS compatibility confirmed). James MacWood's full name corrected in MEMORY.md.
-- **2026-09-02:** Authenticator migration to new phone (full doc in `memory/2026-09-02.md`). Resolution path: mysignins.microsoft.com/security-info + full UPN bypass. Craig's tone: visibly frustrated with MS UX at one point, validated and redirected. Pulse ACI/messaging cron failures observed (pre-existing).
-- **2026-09-03 (today):**
-  - Set up `quedera-ops-daily-refresh` cron (03:00 BST nightly, refresh + deploy).
-  - Added `local-ready-for-test` state to QUEDERA Ops taxonomy (cyan badge). Flipped DUET to it. Rebuild + deploy shipped.
-  - Wrote this recovery blueprint.
+- **2026-08-28** — (no heading): 
+- **2026-08-29** — SENTINEL — explicit pause (15:44 BST): James (MacWood, `1117610657857151020`) pinged in #sentinel at 15:44 BST: **"Pause until Monday 07:00am"**.
+- **2026-09-01** — A2L Monitor: Monthly check ran 2026-09-01 10:02 BST.
+- **2026-09-02** — Microsoft Authenticator — phone migration (the actual fix): Craig migrating Authenticator from old phone to new phone today. Hit the classic "scan QR to recover this account" loop on the new phone with his QUEDERA work account. Took several
 
 ---
 
