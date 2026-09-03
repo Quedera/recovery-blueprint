@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-09-03 (Thu) ~08:58 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-09-03 (Thu) ~12:30 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -321,6 +321,7 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 - **2026-08-29** — SENTINEL — explicit pause (15:44 BST): James (MacWood, `1117610657857151020`) pinged in #sentinel at 15:44 BST: **"Pause until Monday 07:00am"**.
 - **2026-09-01** — A2L Monitor: Monthly check ran 2026-09-01 10:02 BST.
 - **2026-09-02** — Microsoft Authenticator — phone migration (the actual fix): Craig migrating Authenticator from old phone to new phone today. Hit the classic "scan QR to recover this account" loop on the new phone with his QUEDERA work account. Took several
+- **2026-09-03** — 10:14 BST — ElevenLabs subscription decision (#general, guild 1478152424660271356): Craig dropped the $6/mo Google Pay receipt (Paid 2026-09-02, Google Pay ending 5976) and asked whether we still use ElevenLabs. Quick audit: last TTS call was **2026-06-04** — `tac
 
 ---
 
