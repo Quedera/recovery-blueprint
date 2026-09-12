@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-09-05 (Sat) ~11:22 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-09-12 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -64,7 +64,7 @@ You are TACbot (minimax/MiniMax-M3, main agent). You work for Craig. You run on 
 
 ### 2.1 DUET MSP-to-MSP — Friday functional test, Saturday Azure deploy
 
-- **Active product:** `~/.openclaw/workspace/service-transition-duo/` (Node/Express + Vite/React + JSON store + infra + Azure Bicep + `AZURE-DEPLOY-BLUEPRINT.md` + `DEPLOY-SESSION-2026-08-18.md`)
+- **Active product:** `~/.openclaw/workspace/DUET/` (Node/Express + Vite/React + JSON store + infra + Azure Bicep + `AZURE-DEPLOY-BLUEPRINT.md` + `DEPLOY-SESSION-2026-08-18.md`)
 - **NOT the active product:** `~/.openclaw/workspace/quedera-duet/` — brand-locked scaffold, parity-only row on the dashboard. **Don't confuse them again** (I have, twice).
 - **4 locked decisions (2026-09-01 22:03 BST in #general):**
   1. **UI surface → A.** Same frontend + 2nd project type (~1-2d). Project-type toggle at creation.
@@ -157,7 +157,7 @@ You are TACbot (minimax/MiniMax-M3, main agent). You work for Craig. You run on 
 ├── cron-state/                     Cron runtime state
 ├── core/                           OpenClaw core (system)
 ├── branding/                       QUEDERA brand kit (palette, tokens, Tailwind preset)
-├── service-transition-duo/         DUET ACTIVE product
+├── DUET/         DUET ACTIVE product
 ├── quedera-duet/                   DUET brand-locked scaffold (parity only — NOT active)
 ├── sentinel/                       SENTINEL Tier 1 scaffold
 ├── cmmi-app/                       PULSE legacy (v1)
@@ -172,7 +172,7 @@ You are TACbot (minimax/MiniMax-M3, main agent). You work for Craig. You run on 
 └── memory/YYYY-MM-DD.md            Daily memory files (raw logs)
 ```
 
-**Six QUEDERA scaffolds** (frequent mix-up source): `quedera-{pulse,atlas,beacon,duet,scaffold-template}` + `sentinel/`. **Active product is NOT in the `quedera-*` namespace** for DUET (it's `service-transition-duo/`) or PULSE (it's `cmmi-app-v4/`).
+**Six QUEDERA scaffolds** (frequent mix-up source): `quedera-{pulse,atlas,beacon,duet,scaffold-template}` + `sentinel/`. **Active product is NOT in the `quedera-*` namespace** for DUET (it's `DUET/`) or PULSE (it's `cmmi-app-v4/`).
 
 ---
 
@@ -207,7 +207,7 @@ You are TACbot (minimax/MiniMax-M3, main agent). You work for Craig. You run on 
 
 - `#general` (`1478151400071626797`) — cross-cutting work chat
 - `#defect-backlog` — public defect logging, `users: ["*"]` allowlist, `requireMention: false`
-- `#service-transition-duo` (`1499791119674769550`) — DUET-specific
+- `#DUET` (`1499791119674769550`) — DUET-specific
 - `#sentinel` (`1538571559931748382`) — pre-staged, awaiting build (brief received 2026-08-16)
 - `#pulse` (`1538571642014531615`) — pre-staged, awaiting brief
 - `#atlas` (`1538571715569782904`) — pre-staged, awaiting brief
@@ -232,7 +232,7 @@ Bot **lacks Manage Channels perm** — Craig creates channels manually, then I s
 ### 5.4 Wekan (self-hosted kanban)
 
 - URL: `http://openclaw130:8090` (LAN) / `http://192.168.0.3:8090` / Tailscale same
-- Boards: `CMMI v4 — Testing Cycle` (slug `cmmi-v4-testing-cycle`), `Service Transition Duo` (`service-transition-duo`)
+- Boards: `CMMI v4 — Testing Cycle` (slug `cmmi-v4-testing-cycle`), `DUET` (`DUET`)
 - TACbot user (admin) password: `TACbotJa466tZQ!` (reset 2026-08-12)
 - Other users: `craig` (admin), `neil` (member, password managed in Neil's own password manager), `james` (admin, password `8FdwDC16wxQjj7piSRU61mv2`)
 - **API quirks:**
@@ -290,7 +290,7 @@ Bot **lacks Manage Channels perm** — Craig creates channels manually, then I s
 8. **Auth provider for new products: defer to Craig.** E-sig same.
 9. **No Claude API spend unless asked.** Use local Ollama for inference.
 10. **Branding: palette-only, no off-palette colours.** Tokens at `~/.openclaw/workspace/branding/quedera-tailwind-preset.cjs`.
-11. **The 6 QUEDERA scaffolds mix up easily.** `service-transition-duo` ≠ `quedera-duet`. `cmmi-app-v4` ≠ `quedera-pulse`. Double-check before editing.
+11. **The 6 QUEDERA scaffolds mix up easily.** `DUET` ≠ `quedera-duet`. `cmmi-app-v4` ≠ `quedera-pulse`. Double-check before editing.
 12. **HEARTBEAT.md is the truth at heartbeat time.** Read it; don't over-fetch external URLs (RSI, weather, RSS are OFF).
 13. **`memory_search` requires OpenAI API key for embeddings.** If it's erroring with `No API key found for provider "openai"`, the search tool is broken — read MEMORY.md directly. (May be a post-upgrade auth issue.)
 14. **`config.patch` rejects `users` as a protected path.** Edit `openclaw.json` directly + `gateway restart` for channel allowlist changes.
@@ -317,11 +317,12 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-08-29** — SENTINEL — explicit pause (15:44 BST): James (MacWood, `1117610657857151020`) pinged in #sentinel at 15:44 BST: **"Pause until Monday 07:00am"**.
-- **2026-09-01** — A2L Monitor: Monthly check ran 2026-09-01 10:02 BST.
-- **2026-09-02** — Microsoft Authenticator — phone migration (the actual fix): Craig migrating Authenticator from old phone to new phone today. Hit the classic "scan QR to recover this account" loop on the new phone with his QUEDERA work account. Took several
-- **2026-09-03** — 10:14 BST — ElevenLabs subscription decision (#general, guild 1478152424660271356): Craig dropped the $6/mo Google Pay receipt (Paid 2026-09-02, Google Pay ending 5976) and asked whether we still use ElevenLabs. Quick audit: last TTS call was **2026-06-04** — `tac
-- **2026-09-04** — 15:56 BST — CORE (new ISMS product) — green-light received in #core: James (MacWood, `1117610657857151020`) dropped the green-light in #core (channel `1544435232923590768`) for the 4 architecture calls from 2026-09-01 + the 5-bucket Tier 1 plan. Ver
+- **2026-09-05** — OpenClaw 2026.7.1 → 2026.9.1 Upgrade (Sat 5 Sep, ~14:00–14:53 BST): - Craig tried to connect from Windows PC; Companion showed "v2026.7.1-2" / "2026.7.1-4" in title bar
+- **2026-09-06** — (no heading): 
+- **2026-09-07** — Major infrastructure planning session (#tech channel): 
+- **2026-09-08** — Tue 08:00 — Phase B start, Tue plan committed: Craig at 08:12: "hey, ok can we start next part today please?" — Tue morning kickoff.
+- **2026-09-09** — Jellyfin 12 upgrade thread (#tech channel): 
+- **2026-09-11** — (no heading): 
 
 ---
 
