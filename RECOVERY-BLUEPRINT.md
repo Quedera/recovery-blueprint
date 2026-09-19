@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-09-12 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-09-19 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,12 +317,7 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-09-05** — OpenClaw 2026.7.1 → 2026.9.1 Upgrade (Sat 5 Sep, ~14:00–14:53 BST): - Craig tried to connect from Windows PC; Companion showed "v2026.7.1-2" / "2026.7.1-4" in title bar
-- **2026-09-06** — (no heading): 
-- **2026-09-07** — Major infrastructure planning session (#tech channel): 
-- **2026-09-08** — Tue 08:00 — Phase B start, Tue plan committed: Craig at 08:12: "hey, ok can we start next part today please?" — Tue morning kickoff.
-- **2026-09-09** — Jellyfin 12 upgrade thread (#tech channel): 
-- **2026-09-11** — (no heading): 
+- (no memory files in the past 7 days)
 
 ---
 
