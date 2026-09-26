@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-09-19 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-09-26 (Sat) ~08:01 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,7 +317,9 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- (no memory files in the past 7 days)
+- **2026-09-21** — What happened: DUET backend's `store.js` was left broken with orphan Q6 remnants from Friday's incomplete undo.
+- **2026-09-22** — Pi 5 OpenClaw setup for friend: 
+- **2026-09-24** — SENTINEL — paused pending Craig's review: **State at pause (2026-09-24 ~09:30 BST):**
 
 ---
 
