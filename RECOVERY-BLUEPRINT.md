@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-10-03 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-10-10 (Sat) ~08:00 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,7 +317,8 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-10-02** — UGREEN vs Synology discussion (#tech channel): Trade-offs (acceptable for Craig):
+- **2026-10-03** — Summary: All 3 mock-data pages refactored to Prisma + Acme seed expanded + deployed live. Active revision `core-dev-frontend--noauth-v2`. All pages return HTTP 200 with real PostgreSQL data
+- **2026-10-09** — OpenClaw version check + upgrade analysis (#tech channel): **Relevant for Craig's setup** (Linux, AMD Ryzen, headless):
 
 ---
 
