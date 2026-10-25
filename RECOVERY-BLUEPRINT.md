@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-10-24 (Sat) ~14:18 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-10-25 (Sun) ~04:23 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -318,7 +318,10 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
 - **2026-10-18** — SENTINEL — Craig returned for status: **Resume (2026-10-18 09:47 BST):** Craig pinged #sentinel after ~24-day pause ("Hi TacBot, please provide a summary of decisions pending?"). Memory state from 2026-09-24 confirmed 
+- **2026-10-24** — Conversation Summary: assistant: "Let me try once more with simpler calls."
+- **2026-10-24** — Conversation Summary: user: "With what youve seen here, do you think ill like crimson desert ?"
 - **2026-10-24** — Exec hard-deadline failure → root cause: systemd crash-loop: Craig surfaced a system notice in Discord DM:
+- **2026-10-25** — Cron run: quedera-ops-daily-refresh — SUCCESS: Both steps exited 0 from `/home/nortski101/.openclaw/workspace/quedera-ops`:
 
 ---
 
