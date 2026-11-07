@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-10-31 (Sat) ~09:03 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-11-07 (Sat) ~09:02 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,14 +317,13 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-10-24** — Conversation Summary: assistant: "Let me try once more with simpler calls."
-- **2026-10-24** — Conversation Summary: user: "With what youve seen here, do you think ill like crimson desert ?"
-- **2026-10-24** — Exec hard-deadline failure → root cause: systemd crash-loop: Craig surfaced a system notice in Discord DM:
-- **2026-10-25** — Cron run: quedera-ops-daily-refresh — SUCCESS: Both steps exited 0 from `/home/nortski101/.openclaw/workspace/quedera-ops`:
-- **2026-10-26** — DUET MSP-to-MSP — v0.4.0 → v0.5.1 (Tyto alba testing on iPad via Tailscale): Branch: `feature/msp-to-msp-schema`. Commits: v0.4.0 schema → v0.4.1 API → v0.4.2 validation
-- **2026-10-27** — quedera-ops-daily-refresh repaired (agentTurn timeout -> deterministic command payload): Cron `quedera-ops-daily-refresh` (id cff6b96d-9355-45f3-b8cd-69720552a406, `0 3 * * *` Europe/London)
-- **2026-10-28** — Crimson Desert — early Abyss Artifact (skill point) spending advice for Craig: Craig has 3 Abyss Artifacts early and asked what to spend them on.
-- **2026-10-30** — duet-board-sync (17:18 GMT, unattended cron): Wekan board DUET (`ir96XzyEPzgtjvjgh`) reconciled against the workspace. 4 board writes, 2 new cards, 2 description refreshes, 2 swimlane repairs, MEMORY.md snapshot refreshed.
+- **2026-10-31** — Weekly recovery blueprint refresh (cron 3105e97c): Ran `scripts/recovery-blueprint-refresh.sh` — exit 0, no partial state from the aborted 09:00/09:01 turns.
+- **2026-11-01** — Second "service child cleanup ... hard deadline" failure (04:05:03) — full causal chain found: Craig got `Exec failed (mild-nud, unknown exit code) :: service child cleanup did not complete before its hard deadline; pending: {closingReceipt, controlClose, relayExit, lineageE
+- **2026-11-02** — James' testing notes - PULSE + DUET defects (raised by Craig in #defect-backlog): Craig relayed two batches of James' manual testing notes and asked for questions to take back
+- **2026-11-03** — Azure promotion: PULSE + DUET (authorised by Craig 08:43): Craig authorised promoting after Neil confirmed the local fixes. Promotion ran
+- **2026-11-04** — SENTINEL — local deploy audit: **Question asked:** "Is SENTINEL ready to be deployed locally?" + "Any OPEN decisions or Tasks?"
+- **2026-11-05** — ROOT CAUSE of the WorkOS "Invalid client secret" OAuth failure: NOT a rotated API key. The key was **valid the whole time**. The file
+- **2026-11-06** — Friday weekly status run (cron `team-weekly-status`, 09:00 UK): Window: 2026-10-30 09:00 → 2026-11-06 09:00 UTC. Report delivered to Discord #weekly-status (1539970742794461274).
 
 ---
 
