@@ -2,7 +2,7 @@
 
 **Purpose:** Self-contained context for a fresh TACbot instance. If the OpenClaw 2026.7.1 → 2026.8.1 upgrade wipes memory, paste this back at me and I can recover in one read.
 
-**Snapshot:** 2026-11-07 (Sat) ~09:02 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
+**Snapshot:** 2026-11-14 (Sat) ~09:02 UTC · **OpenClaw:** 2026.7.1 → targeting 2026.8.1 stable on npm · **Owner:** Craig ("Nortski101", `675635027999981568`)
 
 ---
 
@@ -317,13 +317,12 @@ Run in order, any failure means upgrade didn't restore cleanly → fall back to 
 
 ## 9. Last 7 days context (skip if MEMORY.md intact)
 
-- **2026-10-31** — Weekly recovery blueprint refresh (cron 3105e97c): Ran `scripts/recovery-blueprint-refresh.sh` — exit 0, no partial state from the aborted 09:00/09:01 turns.
-- **2026-11-01** — Second "service child cleanup ... hard deadline" failure (04:05:03) — full causal chain found: Craig got `Exec failed (mild-nud, unknown exit code) :: service child cleanup did not complete before its hard deadline; pending: {closingReceipt, controlClose, relayExit, lineageE
-- **2026-11-02** — James' testing notes - PULSE + DUET defects (raised by Craig in #defect-backlog): Craig relayed two batches of James' manual testing notes and asked for questions to take back
-- **2026-11-03** — Azure promotion: PULSE + DUET (authorised by Craig 08:43): Craig authorised promoting after Neil confirmed the local fixes. Promotion ran
-- **2026-11-04** — SENTINEL — local deploy audit: **Question asked:** "Is SENTINEL ready to be deployed locally?" + "Any OPEN decisions or Tasks?"
-- **2026-11-05** — ROOT CAUSE of the WorkOS "Invalid client secret" OAuth failure: NOT a rotated API key. The key was **valid the whole time**. The file
-- **2026-11-06** — Friday weekly status run (cron `team-weekly-status`, 09:00 UK): Window: 2026-10-30 09:00 → 2026-11-06 09:00 UTC. Report delivered to Discord #weekly-status (1539970742794461274).
+- **2026-11-07** — 09:02 — Weekly recovery blueprint refresh (cron 3105e97c): Ran `scripts/recovery-blueprint-refresh.sh` — exit 0. Header timestamp -> 2026-11-07 (Sat) ~09:02 UTC, §9 digest rebuilt with 7 entries (2026-10-31..2026-11-06). Synced to `recover
+- **2026-11-10** — Elite Dangerous - system colonisation tools and rules (Craig, #gaming 19:59): **Question:** resources/tools for which systems are suitable for colonisation, map form or list.
+- **2026-11-11** — Conversation Summary: assistant: "The pin is confirmed: Immich’s `postgres:14-vectorchord...@sha256:bcf...` must remain unchanged. I’m treating that as a hard constraint and checking the upgrade procedu
+- **2026-11-11** — OpenClaw upgrade path check (21:10, Craig asked in #general) <!-- project: path:/home/nortski101/.openclaw/workspace -->: Checked only - NOT upgraded. Upgrade run was left for Craig to authorise.
+- **2026-11-12** — A1 purchase: Craig bought a **Bambu Lab A1** — **£280 with a voucher**. He previously owned an **AnkerMake M5C**.
+- **2026-11-13** — TACbot notes (appended ~09:10): ```
 
 ---
 
